@@ -11,4 +11,4 @@ Soon, at least I hope.
 The Problem is, Im using a HTML/CSS Dashboard Template from a third party developer and he doesnt has shared the license for it and due I really like the design of it, I want to use it. I made already a running proof of work web app withthe basic functionality, but its not yet ready for productive use and represent more a early alpha (really, I suppose you dont want just to use a one page table).
 
 ## Screenshot
-Will come soon
+![alt Screenshot of functional medical record](https://github.com/petrk94/ownhealthrecord/blob/master/ownhealthrecord_medrecord_dashboard.png)
