@@ -12,3 +12,7 @@ The Problem is, Im using a HTML/CSS Dashboard Template from a third party develo
 
 ## Screenshot
 ![alt Screenshot of functional medical record](https://github.com/petrk94/ownhealthrecord/blob/master/ownhealthrecord_medrecord_dashboard.png)
+
+
+## Used Dashboard Theme
+The Dashboard theme, developed by Creative Tim is the <a href="https://github.com/creativetimofficial/paper-dashboard" target="_blank">Paper-Dashboard</a> and is licensed by <a href="https://www.creative-tim.com/license/" target="_blank">Creative Tim under MIT License</a>.
