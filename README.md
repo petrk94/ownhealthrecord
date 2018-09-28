@@ -13,7 +13,7 @@ The Problem is, Im using a HTML/CSS Dashboard Template from a third party develo
 
 # How to use 
 The current work is a proof of concept. Its working but is nothing complicated.
-To use it, upload the 2 files medical-record.php and dbconnection.php in your directory where you want to open it on your server.
+To use it, upload the 3 files medical-record.php, insert-medical-record.php, dbconnection.php in your directory where you want to open it on your server.
 
 You have to create on mysql via PHPMyAdmin a new database and run the SQL commands to generate the right table.
 
