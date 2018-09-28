@@ -10,6 +10,44 @@ For that reason, and because the German Insurances and Doctor Software Supplier 
 Soon, at least I hope.
 The Problem is, Im using a HTML/CSS Dashboard Template from a third party developer and he doesnt has shared the license for it and due I really like the design of it, I want to use it. I made already a running proof of work web app withthe basic functionality, but its not yet ready for productive use and represent more a early alpha (really, I suppose you dont want just to use a one page table).
 
+
+# How to use 
+The current work is a proof of concept. Its working but is nothing complicated.
+To use it, upload the 2 files medical-record.php and dbconnection.php in your directory where you want to open it on your server.
+
+You have to create on mysql via PHPMyAdmin a new database and run the SQL commands to generate the right table.
+
+```
+
+CREATE TABLE IF NOT EXISTS `medicalrecords` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `location` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `responsive_doctor` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `issue_description` mediumtext COLLATE utf8_unicode_ci NOT NULL,
+  `diagnosis` mediumtext COLLATE utf8_unicode_ci NOT NULL,
+  `prescribed_solution` varchar(5000) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+```
+
+
+Afterwards you have to change the settings in the dbconnection.php to establish the database connection.
+
+```
+<?php
+// Connects to my Database
+$db_host = "localhost";
+$db_user = "user";
+$db_pass = "pass";
+$db_table = "table";
+
+$connection = mysqli_connect($db_host, $db_user, $db_pass);
+mysqli_select_db($connection, $db_table);
+?>
+```
+If it is set correctly, you can open medical-record.php and you can begin enter your data. After sending the entry, you should see 
+
+
 ## Screenshot
 ![alt Screenshot of functional medical record](https://github.com/petrk94/ownhealthrecord/blob/master/ownhealthrecord_medrecord_dashboard.png)
 
