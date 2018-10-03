@@ -1,13 +1,9 @@
 <?php
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
+require('db_connection.php');
 
-$servername = "localhost";
-$username = "user";
-$password = "password";
-$dbname = "dbname";
-
-$mysqli = new mysqli($servername, $username, $password, $dbname);
+$mysqli = new mysqli($db_host, $db_user, $db_pass, $db_table);
  
 // Check connection
 if($mysqli === false){
