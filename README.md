@@ -30,23 +30,8 @@ CREATE TABLE IF NOT EXISTS `medicalrecords` (
   PRIMARY KEY (`id`)
 ```
 
-
-Afterwards you have to change the settings in the dbconnection.php to establish the database connection.
-
-```
-<?php
-// Connects to my Database
-$db_host = "localhost";
-$db_user = "user";
-$db_pass = "pass";
-$db_table = "table";
-
-$connection = mysqli_connect($db_host, $db_user, $db_pass);
-mysqli_select_db($connection, $db_table);
-?>
-```
-If it is set correctly, you can open medical-record.php and you can begin enter your data. After sending the entry, you should see 
-
+Open the install.php in your browser and type in your MySQL/Mariadb credentials, 
+afterwards these are written in the db_connection.php file and you get forwarded to the application.
 
 ## Screenshot
 ![alt Screenshot of functional medical record](https://github.com/petrk94/ownhealthrecord/blob/master/ownhealthrecord_medrecord_dashboard.png)
