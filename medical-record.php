@@ -246,7 +246,7 @@
                                     <tbody>
                                        
 <?php
-require "dbconnection.php";
+require "db_connection.php";
 
 $query = "SELECT * FROM medicalrecords"; //You don't need a ; like you do in SQL
 $result = mysqli_query($connection, $query);					
