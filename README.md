@@ -10,6 +10,10 @@ For that reason, and because the German Insurances and Doctor Software Supplier 
 Soon, at least I hope.
 The Problem is, Im using a HTML/CSS Dashboard Template from a third party developer and he doesnt has shared the license for it and due I really like the design of it, I want to use it. I made already a running proof of work web app withthe basic functionality, but its not yet ready for productive use and represent more a early alpha (really, I suppose you dont want just to use a one page table).
 
+# Requirements
+* LAMP Stack
+* PHP 7
+* A MySQL/MariaDB database
 
 # How to use 
 The current work is a proof of concept. Its working but is nothing complicated.
