@@ -51,10 +51,13 @@ Open the install.php in your browser and type in your MySQL/Mariadb credentials,
 afterwards these are written in the dbconnection.php file and you get forwarded to the application.
 
 ## Current Functionality
-* Medical-Record.php - here you can write down your personal medical record and get it    displayed what was saved in the database.
+* medical-Record.php - here you can write down your personal medical record and get it    displayed what was saved in the database.
 
-* Doctors-list.php - here you can see all your doctors contact information as well the    threatment time, so you will not forget when you was there and how long the doctor has
+* doctors-list.php - here you can see all your doctors contact information as well the    threatment time, so you will not forget when you was there and how long the doctor has
   cared about your health like, Threatment period 01.2018 - 10.2018.
+  
+* medicine.php - here you can add your medication, dosis, period of usage, link to a    
+  information website about the medicine you are taking and additional warnings by your doctor.
 
 
 ## Screenshot
