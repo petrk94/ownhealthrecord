@@ -32,6 +32,19 @@ CREATE TABLE IF NOT EXISTS `medicalrecords` (
   `diagnosis` mediumtext COLLATE utf8_unicode_ci NOT NULL,
   `prescribed_solution` varchar(5000) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
+  )
+  
+  
+CREATE TABLE IF NOT EXISTS `doctors` (
+  `id` int(100) NOT NULL AUTO_INCREMENT,
+  `doctor_name` varchar(1000) COLLATE utf8_unicode_ci NOT NULL,
+  `doctor_type` varchar(1000) COLLATE utf8_unicode_ci NOT NULL,
+  `address` varchar(1000) COLLATE utf8_unicode_ci NOT NULL,
+  `phone` varchar(1000) COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(1000) COLLATE utf8_unicode_ci NOT NULL,
+  `treatment_period` varchar(1000) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+  )  
 ```
 
 Open the install.php in your browser and type in your MySQL/Mariadb credentials, 
