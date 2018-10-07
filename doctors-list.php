@@ -82,7 +82,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="medicine.php">
                         <i class="fas fa-pills"></i>
                         <p>Medicine</p>
                     </a>
