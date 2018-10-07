@@ -70,7 +70,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="doctors-list.php">
                         <i class="fas fa-user-md"></i>
                         <p>Doctor List</p>
                     </a>
