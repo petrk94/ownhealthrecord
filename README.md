@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `medicalrecords` (
 ```
 
 Open the install.php in your browser and type in your MySQL/Mariadb credentials, 
-afterwards these are written in the db_connection.php file and you get forwarded to the application.
+afterwards these are written in the dbconnection.php file and you get forwarded to the application.
 
 ## Current Functionality
 * Medical-Record.php - here you can write down your personal medical record and get it    displayed what was saved in the database.
