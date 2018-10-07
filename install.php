@@ -20,7 +20,7 @@
 
 if(isset($_POST['db_host']) && isset($_POST['db_user']) && isset($_POST['db_pass']) && isset($_POST['db_table'])){
 $data = "<?php \r\n\$db_host = \"" . $_POST['db_host'] ."\";\r\n" . "\$db_user = \"" . $_POST['db_user'] . "\";\r\n" . "\$db_pass = \"". $_POST['db_pass'] . "\";\r\n" . "\$db_table = \"" . $_POST['db_table'] . "\";\r\n" . "\$connection = mysqli_connect(\$db_host, \$db_user, \$db_pass);\r\n" . "mysqli_select_db(\$connection, \$db_table);\r\n" . "?>";
-    $ret = file_put_contents('db_connection.php', $data);
+    $ret = file_put_contents('dbconnection.php', $data);
     if($ret === false) {
         die('There was an error writing this file');
     }
