@@ -37,6 +37,13 @@ CREATE TABLE IF NOT EXISTS `medicalrecords` (
 Open the install.php in your browser and type in your MySQL/Mariadb credentials, 
 afterwards these are written in the db_connection.php file and you get forwarded to the application.
 
+## Current Functionality
+* Medical-Record.php - here you can write down your personal medical record and get it    displayed what was saved in the database.
+
+* Doctors-list.php - here you can see all your doctors contact information as well the    threatment time, so you will not forget when you was there and how long the doctor has
+  cared about your health like, Threatment period 01.2018 - 10.2018.
+
+
 ## Screenshot
 ![alt Screenshot of functional medical record](https://github.com/petrk94/ownhealthrecord/blob/master/ownhealthrecord_medrecord_dashboard.png)
 
