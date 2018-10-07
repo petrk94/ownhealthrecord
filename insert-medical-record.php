@@ -1,7 +1,7 @@
 <?php
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
-require('db_connection.php');
+require('dbconnection.php');
 
 $mysqli = new mysqli($db_host, $db_user, $db_pass, $db_table);
  
