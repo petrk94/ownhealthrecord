@@ -162,7 +162,7 @@ sec_session_start();
                               </ul>
                         </li>
 						<li>
-                            <a href="../logout.php">
+                            <a href="../include/logout.php">
 								<i class="ti-settings"></i>
 								<p>logout</p>
                             </a>
