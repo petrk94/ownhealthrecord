@@ -23,9 +23,9 @@ include_once '../includes/functions.php';
     <head>
         <meta charset="UTF-8">
         <title>Secure Login: Registration Form</title>
-        <script type="text/JavaScript" src="js/sha512.js"></script> 
-        <script type="text/JavaScript" src="js/forms.js"></script>
-        <link rel="stylesheet" href="styles/main.css" />
+        <script type="text/JavaScript" src="../assets/js/sha512.js"></script> 
+        <script type="text/JavaScript" src="../assets/js/forms.js"></script>
+        <link rel="stylesheet" href="../assets/styles/main.css" />
     </head>
     <body>
         <!-- Registration form to be output if the POST variables are not
@@ -66,6 +66,6 @@ include_once '../includes/functions.php';
                                    this.form.password,
                                    this.form.confirmpwd);" /> 
         </form>
-        <p>Return to the <a href="index.php">login page</a>.</p>
+        <p>Return to the <a href="../index.php">login page</a>.</p>
     </body>
 </html>
