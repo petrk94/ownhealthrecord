@@ -189,7 +189,7 @@ sec_session_start();
                                     </thead>
                                     <tbody>							
 										<tr>
-										<form action="insert-medical-record.php" method="post">
+										<form action="../includes/insert-medical-record.php" method="post">
 											<td><input type="text" class="form-control" name="location" placeholder="Location"></td>
 											<td><input type="text" class="form-control" name="responsive_doctor" placeholder="Doctor name"></td>
 											<td><textarea id="note" class="form-control" name="issue_description" placeholder="Patient complaints"></textarea></td>

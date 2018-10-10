@@ -196,7 +196,7 @@ sec_session_start();
                                     </thead>
                                     <tbody>							
 										<tr>
-										<form action="insert-medicine.php" method="post">
+										<form action="../includes/insert-medicine.php" method="post">
 											<td><input type="text" class="form-control" name="medication_name" placeholder="Medication Name"></td>
 											<td><textarea id="note" class="form-control" name="medication_dosis" placeholder="Dosis of your medication"></textarea></td>
 											<td><textarea id="note" class="form-control" name="medication_time" placeholder="how long to take"></textarea></td>

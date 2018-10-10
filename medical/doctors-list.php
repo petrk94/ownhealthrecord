@@ -195,7 +195,7 @@ sec_session_start();
                                     </thead>
                                     <tbody>							
 										<tr>
-										<form action="insert-doctor.php" method="post">
+										<form action="../includes/insert-doctor.php" method="post">
 											<td><input type="text" class="form-control" name="doctor_name" placeholder="Doctor Name"></td>
 											<td><input type="text" class="form-control" name="doctor_type" placeholder="Doctor Profession"></textarea></td>
 											<td><input type="text" class="form-control" name="address" placeholder="Address"></textarea></td>
