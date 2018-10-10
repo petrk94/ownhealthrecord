@@ -196,7 +196,7 @@ sec_session_start();
 <?php
 require "../includes/db_connect.php";
 
-$query = "SELECT * FROM medicalrecords"; //You don't need a ; like you do in SQL
+$query = "SELECT * FROM doctors"; //You don't need a ; like you do in SQL
 $result = mysqli_query($connection, $query);				
 while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through results
 										echo "<tbody>";
