@@ -266,14 +266,15 @@ sec_session_start();
 										<th>Diagnosis</th>
 										<th>Treatment</th>
                                     </thead>
-                                    <tbody>
+                                    
                                        
 <?php
-require "dbconnection.php";
+require "../includes/db_connect.php";
 
 $query = "SELECT * FROM medicalrecords"; //You don't need a ; like you do in SQL
 $result = mysqli_query($connection, $query);					
 while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through results
+										echo "<tbody>";
 										echo "<tr>";
                                         echo "<td>" . $row['date'] . "</td>";
 										echo "<td>" . $row['location'] . "</td>";
@@ -282,10 +283,11 @@ while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through re
 										echo "<td>" . $row['diagnosis'] . "</td>";
 										echo "<td>" . $row['prescribed_solution'] . "</td>";
 }										echo "</tr>";
+										echo "</tbody>";
 mysqli_close ($connection); //Make sure to close out the database connection
 ?>										
                                         
-                                    </tbody>
+                                    
                                 </table>
 
                             </div>
