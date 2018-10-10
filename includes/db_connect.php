@@ -23,6 +23,7 @@ $mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
 $connection = mysqli_connect(HOST, USER, PASSWORD);
 mysqli_select_db($connection, DATABASE);
 
+
 if ($mysqli->connect_error) {
     header("Location: ../error.php?err=Unable to connect to MySQL");
     exit();
