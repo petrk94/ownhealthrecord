@@ -164,7 +164,7 @@ sec_session_start();
 						<li>
                             <a href="#">
 								<i class="ti-settings"></i>
-								<p>Settings</p>
+								<p>logout</p>
                             </a>
                         </li>
                     </ul>
