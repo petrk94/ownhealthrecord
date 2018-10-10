@@ -34,6 +34,7 @@
 	
 </head>
 <body>
+<?php if (login_check($mysqli) == true) : ?>
 
 <div class="wrapper">
 	<div class="sidebar" data-background-color="white" data-active-color="danger">
@@ -234,8 +235,11 @@ mysqli_close ($connection); //Make sure to close out the database connection
 
     </div>
 </div>
-
-
+        <?php else : ?>
+            <p>
+                <span class="error">You are not authorized to access this page.</span> Please <a href="../index.php">login</a>.
+            </p>
+        <?php endif; ?>
 </body>
 
     <!--   Core JS Files   -->
