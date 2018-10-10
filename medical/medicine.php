@@ -69,7 +69,7 @@ sec_session_start();
     	<div class="sidebar-wrapper">
             <div class="logo">
                 <a href="#" class="simple-text">
-                    YOUR NAME <br> Medical Record
+                    <?php echo htmlentities($_SESSION['username']); ?> <br> Medical Record
                 </a>
             </div>
 
@@ -162,9 +162,9 @@ sec_session_start();
                               </ul>
                         </li>
 						<li>
-                            <a href="#">
+                            <a href="../includes/logout.php">
 								<i class="ti-settings"></i>
-								<p>Settings</p>
+								<p>logout</p>
                             </a>
                         </li>
                     </ul>
@@ -240,13 +240,13 @@ sec_session_start();
 										<th>Link to database</th>
 										<th>Warnings</th>
                                     </thead>
-                                    <tbody>
 <?php
-require "dbconnection.php";
+require "../includes/db_connect.php";
 
-$query = "SELECT * FROM medicine"; //You don't need a ; like you do in SQL
-$result = mysqli_query($connection, $query);					
+$query = "SELECT * FROM medicalrecords"; //You don't need a ; like you do in SQL
+$result = mysqli_query($connection, $query);						
 while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through results
+										echo "<tbody>";
 										echo "<tr>";
 										echo "<td>" . $row['date'] . "</td>";
                                         echo "<td>" . $row['medication_name'] . "</td>";
@@ -255,13 +255,15 @@ while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through re
 										echo "<td>" . $row['medication_period'] . "</td>";
 										echo "<td><a href=" . $row['medication_link'] . ">" . $row['medication_link'] . "</a></td>";
 										echo "<td>" . $row['medication_warnings'] . "</td>";
-}										echo "</tr>";
+										echo "</tr>";
+										echo "</tbody>";
+										}
 mysqli_close ($connection); //Make sure to close out the database connection
 ?>										
     
 
                                         
-                                    </tbody>
+                                    
                                 </table>
 
                             </div>
@@ -273,33 +275,7 @@ mysqli_close ($connection); //Make sure to close out the database connection
         </div>
 
         <footer class="footer">
-		<!--
-            <div class="container-fluid">
-                <nav class="pull-left">
-                    <ul>
 
-                        <li>
-                            <a href="http://www.creative-tim.com">
-                                Creative Tim
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://blog.creative-tim.com">
-                               Blog
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.creative-tim.com/license">
-                                Licenses
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-				<div class="copyright pull-right">
-                    &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by <a href="http://www.creative-tim.com">Creative Tim</a>
-                </div>
-            </div>
-			-->
         </footer>
 
 

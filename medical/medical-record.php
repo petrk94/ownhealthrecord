@@ -247,8 +247,9 @@ while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through re
 										echo "<td>" . $row['issue_description'] . "</td>";
 										echo "<td>" . $row['diagnosis'] . "</td>";
 										echo "<td>" . $row['prescribed_solution'] . "</td>";
-}										echo "</tr>";
+										echo "</tr>";
 										echo "</tbody>";
+										}
 mysqli_close ($connection); //Make sure to close out the database connection
 ?>										
                                         
@@ -262,7 +263,10 @@ mysqli_close ($connection); //Make sure to close out the database connection
                 </div>
             </div>
         </div>
+		
+        <footer class="footer">
 
+        </footer>
 
     </div>
 </div>
