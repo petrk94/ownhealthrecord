@@ -16,8 +16,7 @@ The Problem is, ~~Im using a HTML/CSS Dashboard Template from a third party deve
 * A MySQL/MariaDB database
 
 # How to use 
-Upload the files or clone the repo to your Document Root / html folder on your server, open the install.php file in your browser and type in your database credentials. Afterwards it create the dbconnection.php file which is necessary to read and write the database. 
-
+Upload the files or clone the repo to your Document Root / html folder on your server, 
 You have to create on mysql via PHPMyAdmin a new database and run the SQL commands to generate the right table.
 
 ```
