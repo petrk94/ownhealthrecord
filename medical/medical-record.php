@@ -57,7 +57,6 @@ sec_session_start();
 </head>
 <body>
 <?php if (login_check($mysqli) == true) : ?>
-        <p>Welcome <?php echo htmlentities($_SESSION['username']); ?>!</p>
 
 <div class="wrapper">
 	<div class="sidebar" data-background-color="white" data-active-color="danger">
@@ -70,7 +69,7 @@ sec_session_start();
     	<div class="sidebar-wrapper">
             <div class="logo">
                 <a href="#" class="simple-text">
-                    YOUR NAME <br> Medical Record
+                    <?php echo htmlentities($_SESSION['username']); ?> <br> Medical Record
                 </a>
             </div>
 
