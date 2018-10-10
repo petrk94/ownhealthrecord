@@ -332,7 +332,7 @@ mysqli_close ($connection); //Make sure to close out the database connection
 
         <?php else : ?>
             <p>
-                <span class="error">You are not authorized to access this page.</span> Please <a href="index.php">login</a>.
+                <span class="error">You are not authorized to access this page.</span> Please <a href="../index.php">login</a>.
             </p>
         <?php endif; ?>
 </body>
