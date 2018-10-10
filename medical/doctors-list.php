@@ -175,6 +175,52 @@ sec_session_start();
 
 
         <div class="content">
+		
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">New Entry</h4>
+                                <p class="category">Here a new entry for the medicine is written</p>
+                            </div>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <th>Doctor Name</th>
+                                    	<th>Doctor Profession</th>
+                                    	<th>Adress</th>
+                                    	<th>Phone</th>
+										<th>Mail</th>
+										<th>Threatment Period</th>
+                                    </thead>
+                                    <tbody>							
+										<tr>
+										<form action="insert-doctor.php" method="post">
+											<td><input type="text" class="form-control" name="doctor_name" placeholder="Doctor Name"></td>
+											<td><input type="text" class="form-control" name="doctor_type" placeholder="Doctor Profession"></textarea></td>
+											<td><input type="text" class="form-control" name="address" placeholder="Address"></textarea></td>
+											<td><input type="text" class="form-control" name="phone" placeholder="Phone"></textarea></td>
+											<td><input type="text" class="form-control" name="email" placeholder="Email"></td>
+											<td><input type="text" class="form-control" name="threatment_period" placeholder="Period of Threatment"></textarea></td>
+											<td><button type="submit" class="btn btn-primary">Save entry</button></td>
+										</form>
+										</tr>
+									</tbody>
+								</table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>	
+		
+		
+		
+		
+		
+		
+		
+		
+		
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
