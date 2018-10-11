@@ -3,6 +3,11 @@
 # OwnHealthRecord
 This repository is about the Own Health Record Application Web App
 
+# Newest update
+You want to get every update without waiting for the next release?
+Checkout the Developer Log, there you can see the latest changes and what was made, before it get finally released. 
+---> <a href="DeveloperLog.md" target="_blank">DEVELOPER LOG</a>
+
 ## Whats about?
 One problem I faced personally is, that I have different doctors and through traveling and moving to another cities, every doctor has only a snippet of my medical data records.
 This can cause problems, due if Im sick and dont know the medical name for it, the doctor doesnt know about my health problems and so on.
