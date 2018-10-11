@@ -64,7 +64,6 @@ if (login_check($mysqli) == true) {
     <div id="formFooter">
 	<p>You are currently logged <?php echo $logged ?>.</p>
 	<p>If you are done, please <a href="includes/logout.php">log out</a>.</p>
-      <a class="underlineHover" href="#">Forgot Password?</a>
     </div>
 
   </div>
