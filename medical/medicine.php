@@ -253,8 +253,9 @@ sec_session_start();
 										<th>Date</th>
                                         <th>Medication Name</th>
                                     	<th>Dose</th>
-                                    	<th>How long to take</th>
-                                    	<th>Period</th>
+                                    	<th>Frequency</th>
+                                    	<th>Prescription Period</th>
+										<th>Prescription Days Total</th>
 										<th>Link to database</th>
 										<th>Warnings</th>
                                     </thead>
@@ -268,9 +269,11 @@ while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through re
 										echo "<tr>";
 										echo "<td>" . $row['date'] . "</td>";
                                         echo "<td>" . $row['medication_name'] . "</td>";
-										echo "<td>" . $row['medication_dosis'] . "</td>";
-										echo "<td>" . $row['medication_time'] . "</td>";
-										echo "<td>" . $row['medication_period'] . "</td>";
+										echo "<td>" . $row['medication_dose'] . "</td>";
+										echo "<td>" . $row['medication_frequency'] . "</td>";
+										echo "<td>" . $row['prescription_begin'] . " - " . $row['prescription_end'] . "</td>";
+										$prescriptiondiff=date_diff($row['prescription_begin'],$row['prescription_end']);
+										echo "<td>" . $prescriptiondiff . "</td>";
 										echo "<td><a href=" . $row['medication_link'] . ">" . $row['medication_link'] . "</a></td>";
 										echo "<td>" . $row['medication_warnings'] . "</td>";
 										echo "</tr>";
