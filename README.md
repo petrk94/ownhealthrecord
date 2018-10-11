@@ -44,5 +44,14 @@ This software is build by my own, there is **no guarantee** for the safety or se
 The Dashboard theme, developed by Creative Tim is the <a href="https://github.com/creativetimofficial/paper-dashboard" target="_blank">Paper-Dashboard</a> and is licensed by <a href="https://www.creative-tim.com/license/" target="_blank">Creative Tim under MIT License</a>.
 
 The Account and Login Functionality code was made by Github User <a href="https://github.com/peredurabefrog" target="_blank">peredurabefrog</a>.
-His Login Script is very helpful for the implementation of account functionality and to protect the information. <a href="https://github.com/peredurabefrog/phpSecureLogin" target="_blank">phpSecureLogin</a>.
+His <a href="https://github.com/peredurabefrog/phpSecureLogin" target="_blank">phpSecureLogin</a> Script is very helpful for the implementation of account functionality and to protect the information. 
 Here is the code explanation: https://www.wikihow.com/Create-a-Secure-Login-Script-in-PHP-and-MySQL
+
+# Roadmap
+* 2-Factor-Authentication
+* Encrypted medical information in MySQL Database
+* SQlite3 Support
+* Guardian Watcher (cron script which run in the background and detect changes in the code, if change detected, notify user about possible data breach)
+* nice login form
+* nice signup form
+* add allergies page (requested via reddit by @Laxmin)
