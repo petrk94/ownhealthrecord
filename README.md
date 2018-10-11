@@ -36,7 +36,7 @@ Go to the includes folder in your OwnHealthRecord directory and open psl-config.
 
 
 ## Screenshot
-![alt Screenshot of functional medical record](![](images/ownhealthrecord_medrecord_dashboard.png))
+![](images/ownhealthrecord_medrecord_dashboard.png)
 Screenshot from V0.0.1
 
 ## Attention - Safety - No guarantee
