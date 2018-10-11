@@ -51,7 +51,7 @@ Here is the code explanation: https://www.wikihow.com/Create-a-Secure-Login-Scri
 * 2-Factor-Authentication
 * Encrypted medical information in MySQL Database
 * SQlite3 Support
-* Guardian Watcher (cron script which run in the background and detect changes in the code, if change detected, notify user about possible data breach)
+* Guardian (cron script which run in the background and detect changes in the code, if change detected, notify user about possible data breach)
 * nice login form
 * nice signup form
 * add allergies page (requested via reddit by @Laxmin)
