@@ -1,9 +1,9 @@
 <?php
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
-require('dbconnection.php');
+require('db_connect.php');
 
-$mysqli = new mysqli($db_host, $db_user, $db_pass, $db_table);
+$mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
  
 // Check connection
 if($mysqli === false){
@@ -12,16 +12,17 @@ if($mysqli === false){
  
 // Escape user inputs for security
 $medication_name = $mysqli->real_escape_string($_REQUEST['medication_name']);
-$medication_dosis = $mysqli->real_escape_string($_REQUEST['medication_dosis']);
-$medication_time = $mysqli->real_escape_string($_REQUEST['medication_time']);
-$medication_period = $mysqli->real_escape_string($_REQUEST['medication_period']);
+$medication_dose = $mysqli->real_escape_string($_REQUEST['medication_dose']);
+$medication_frequency = $mysqli->real_escape_string($_REQUEST['medication_frequency']);
+$prescription_begin = $mysqli->real_escape_string($_REQUEST['prescription_begin']);
+$prescription_end = $mysqli->real_escape_string($_REQUEST['prescription_end']);
 $medication_link = $mysqli->real_escape_string($_REQUEST['medication_link']);
 $medication_warnings = $mysqli->real_escape_string($_REQUEST['medication_warnings']);
 
 
 
 // Attempt insert query execution
-$sql = "INSERT INTO medicine (medication_name, medication_dosis, medication_time, medication_period, medication_link, medication_warnings) VALUES ('$medication_name', '$medication_dosis', '$medication_time', '$medication_period', '$medication_link', '$medication_warnings')";
+$sql = "INSERT INTO medicine (medication_name, medication_dose, medication_frequency, prescription_begin, prescription_end, medication_link, medication_warnings) VALUES ('$medication_name', '$medication_dose', '$medication_frequency', '$prescription_begin', '$medication_link', '$medication_warnings')";
 if($mysqli->query($sql) === true){
     echo "Records inserted successfully.";
 	header('Location: medicine.php');
