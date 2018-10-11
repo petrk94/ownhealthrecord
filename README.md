@@ -56,10 +56,10 @@ His <a href="https://github.com/peredurabefrog/phpSecureLogin" target="_blank">p
 Here is the code explanation: https://www.wikihow.com/Create-a-Secure-Login-Script-in-PHP-and-MySQL
 
 # Roadmap
-* 2-Factor-Authentication
-* Encrypted medical information in MySQL Database
-* SQlite3 Support
-* Guardian (cron script which run in the background and detect changes in the code, if change detected, notify user about possible data breach)
-* nice login form
-* nice signup form
-* add allergies page (requested via reddit by @Laxmin)
+- [ ] 2-Factor-Authentication
+- [ ] Encrypted medical information in MySQL Database
+- [ ] SQlite3 Support
+- [ ] Guardian (cron script which run in the background and detect changes in the code, if change detected, notify user about possible data breach)
+- [x] ~~nice login form~~ - done!
+- [ ] nice signup form
+- [ ] add allergies page (requested via reddit by @Laxmin)
