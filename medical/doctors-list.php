@@ -86,14 +86,14 @@ sec_session_start();
                         <p>Patient</p>
                     </a>
                 </li>
-                <li>
-                    <a href="medical-record.php">
+                <li class="active">
+                    <a href="#">
                         <i class="ti-view-list-alt"></i>
                         <p>Medical Record</p>
                     </a>
                 </li>
-                <li class="active">
-                    <a href="#">
+                <li>
+                    <a href="doctors-list.php">
                         <i class="fas fa-user-md"></i>
                         <p>Doctor List</p>
                     </a>
@@ -110,6 +110,12 @@ sec_session_start();
                         <p>Medicine</p>
                     </a>
                 </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-allergies"></i>
+                        <p>Allergies</p>
+                    </a>
+                </li>				
                 <li>
                     <a href="#">
                         <i class="fas fa-syringe"></i>

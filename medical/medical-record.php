@@ -108,6 +108,12 @@ sec_session_start();
                 </li>
                 <li>
                     <a href="#">
+                        <i class="fas fa-allergies"></i>
+                        <p>Allergies</p>
+                    </a>
+                </li>				
+                <li>
+                    <a href="#">
                         <i class="fas fa-syringe"></i>
                         <p>Vaccinations</p>
                     </a>
