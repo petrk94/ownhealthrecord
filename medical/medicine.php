@@ -232,7 +232,7 @@ sec_session_start();
                             <div class="content table-responsive table-full-width">
                                 <table class="table table-hover">
                                     <thead>
-										<th>Datum</th>
+										<th>Date</th>
                                         <th>Medication Name</th>
                                     	<th>Dosis</th>
                                     	<th>How long to take</th>
