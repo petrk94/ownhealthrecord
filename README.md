@@ -37,6 +37,7 @@ Go to the includes folder in your OwnHealthRecord directory and open psl-config.
 
 ## Screenshot
 ![alt Screenshot of functional medical record](https://github.com/petrk94/ownhealthrecord/blob/master/ownhealthrecord_medrecord_dashboard.png)
+Screenshot from V0.0.1
 
 ## Attention - Safety - No guarantee
 This software is build by my own, there is **no guarantee** for the safety or secure way that everything is working properly. It is made for selfhosting, so everyone has to take care about the server security and the way of protecting the data. For the login always use a https connection with valid SSL certificate. The Database entries are not encrypted, only the password is hashed and salted.
