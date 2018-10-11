@@ -194,21 +194,33 @@ sec_session_start();
                                 <table class="table table-hover">
                                     <thead>
                                         <th>Medication Name</th>
-                                    	<th>Dosis</th>
-                                    	<th>How long to take</th>
-                                    	<th>Period</th>
-										<th>Link to database</th>
-										<th>Warnings</th>
-                                    </thead>
+                                    	<th>Form/Dose</th>
+                                    	<th>Frequency</th>
+									</thead>
                                     <tbody>							
 										<tr>
 										<form action="../includes/insert-medicine.php" method="post">
 											<td><input type="text" class="form-control" name="medication_name" placeholder="Medication Name"></td>
-											<td><textarea id="note" class="form-control" name="medication_dosis" placeholder="Dosis of your medication"></textarea></td>
-											<td><textarea id="note" class="form-control" name="medication_time" placeholder="how long to take"></textarea></td>
-											<td><textarea id="note" class="form-control" name="medication_period" placeholder="in which period to take it"></textarea></td>
+											<td><textarea id="note" class="form-control" name="medication_dose" placeholder="Injection, Tablet, Capsule, Syrup, Ointment, Suppository, etc"></textarea></td>
+											<td><textarea id="note" class="form-control" name="medication_frequency" placeholder="once daily/twice daily/thrice daily/every ___ hours/other"></textarea></td>
+										
+										</tr>
+									</tbody>
+								</table>	
+								<table class="table table-hover">	
+									<thead>
+									
+                                    	<th>Prescription Start Date</th>
+										<th>Prescription End Date</th>
+										<th>Link to database</th>
+										<th>Warnings/Notes</th>
+                                    </thead>
+                                    <tbody>							
+										<tr>
+											<td><input type="date" class="form-control" name="prescription_begin" placeholder="Prescription Start Date"></textarea></td>
+											<td><input type="date" class="form-control" name="prescription_end" placeholder="Prescription End Date"></textarea></td>
 											<td><input type="text" class="form-control" name="medication_link" placeholder="Own link to medication"></td>
-											<td><textarea id="note" class="form-control" name="medication_warnings" placeholder="Warnings by the doctor"></textarea></td>
+											<td><textarea id="note" class="form-control" name="medication_warnings" placeholder="Warnings / notes"></textarea></td>
 											<td><button type="submit" class="btn btn-primary">Save entry</button></td>
 										</form>
 										</tr>
@@ -238,9 +250,9 @@ sec_session_start();
                             <div class="content table-responsive table-full-width">
                                 <table class="table table-hover">
                                     <thead>
-										<th>Dates</th>
+										<th>Date</th>
                                         <th>Medication Name</th>
-                                    	<th>Dosis</th>
+                                    	<th>Dose</th>
                                     	<th>How long to take</th>
                                     	<th>Period</th>
 										<th>Link to database</th>
