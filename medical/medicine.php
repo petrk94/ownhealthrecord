@@ -217,8 +217,8 @@ sec_session_start();
                                     </thead>
                                     <tbody>							
 										<tr>
-											<td><input type="date" class="form-control" name="prescription_begin" placeholder="Prescription Start Date"></textarea></td>
-											<td><input type="date" class="form-control" name="prescription_end" placeholder="Prescription End Date"></textarea></td>
+											<td><input type="date" class="form-control" name="prescription_begin" placeholder="Prescription Start Date"></td>
+											<td><input type="date" class="form-control" name="prescription_end" placeholder="Prescription End Date"></td>
 											<td><input type="text" class="form-control" name="medication_link" placeholder="Own link to medication"></td>
 											<td><textarea id="note" class="form-control" name="medication_warnings" placeholder="Warnings / notes"></textarea></td>
 											<td><button type="submit" class="btn btn-primary">Save entry</button></td>
@@ -267,12 +267,14 @@ $result = mysqli_query($connection, $query);
 while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through results
 										echo "<tbody>";
 										echo "<tr>";
-										echo "<td>" . $row['date'] . "</td>";
+										echo "<td style=\"padding-right: 0px;padding-left: 8px;\">" . $row['date'] . "</td>";
                                         echo "<td>" . $row['medication_name'] . "</td>";
 										echo "<td>" . $row['medication_dose'] . "</td>";
 										echo "<td>" . $row['medication_frequency'] . "</td>";
-										echo "<td>" . $row['prescription_begin'] . " - " . $row['prescription_end'] . "</td>";
-										$prescriptiondiff=date_diff($row['prescription_begin'],$row['prescription_end']);
+										echo "<td style=\"text-align:center;\">" . $row['prescription_begin'] . "<br>-<br>" . $row['prescription_end'] . "</td>";
+										//$date_begin = new DateTime($row['prescription_begin']);
+										//$date_end = new DateTime($row['prescription_end']);
+										//$prescriptiondiff=date_diff($date_begin,$date_end);
 										echo "<td>" . $prescriptiondiff . "</td>";
 										echo "<td><a href=" . $row['medication_link'] . ">" . $row['medication_link'] . "</a></td>";
 										echo "<td>" . $row['medication_warnings'] . "</td>";
