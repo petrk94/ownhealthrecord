@@ -45,7 +45,7 @@ if (login_check($mysqli) == true) {
 
     <!-- Icon -->
     <div class="fadeIn first">
-      <img src="https://github.com/petrk94/ownhealthrecord/raw/master/ownhealthrecord_logo.png" id="icon" alt="User Icon" />
+      <img src="assets/ownhealthrecord_logo.png" id="icon" alt="User Icon" />
     </div>
 
     <!-- Login Form -->
