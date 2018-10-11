@@ -1,3 +1,5 @@
+![](ownhealthrecord_logo.png)
+
 # OwnHealthRecord
 This repository is about the Own Health Record Application Web App
 
