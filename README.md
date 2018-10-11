@@ -1,4 +1,4 @@
-![](ownhealthrecord_logo.png)
+![](images/ownhealthrecord_logo.png)
 
 # OwnHealthRecord
 This repository is about the Own Health Record Application Web App
@@ -36,7 +36,7 @@ Go to the includes folder in your OwnHealthRecord directory and open psl-config.
 
 
 ## Screenshot
-![alt Screenshot of functional medical record](https://github.com/petrk94/ownhealthrecord/blob/master/ownhealthrecord_medrecord_dashboard.png)
+![alt Screenshot of functional medical record](![](images/ownhealthrecord_medrecord_dashboard.png))
 Screenshot from V0.0.1
 
 ## Attention - Safety - No guarantee
