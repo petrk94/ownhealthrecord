@@ -1,4 +1,11 @@
 # The Developer Log
+### 13.10.2018 - Guardian
+Hey guys
+
+on the roadmap I wrote about a "Guardian" and yes, this is maybe a own project for this project. Guardian will run over a cronjob from time to time and will check the files whether it got changed etc. This is pretty interesting. I decided to get it verified with a hash function. So the first run is a indexing of all files in the application folder, Guardian will create a list (I think about a CSV file or plain text for the moment) and in this file will be every file and its hash listed (still thinking about which hash function will be nice enough, I suppose SHA256/512?). If there will be another run, Guardian will check every hash of the files again and verify it with the origin hash list. If they are valid, everything is fine. But if it is not the same, Guardian will write this incident in a log file and send it over email to the user.
+For now I have the scan and hashing functionality. See screenshot:
+
+![](images/guardian_alphademo.PNG)
 
 ### 11.10.2018 - Login get beautiful
 Hey guys
