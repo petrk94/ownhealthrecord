@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 10, 2018 at 07:31 PM
+-- Generation Time: Oct 13, 2018 at 03:38 PM
 -- Server version: 5.1.73-log
 -- PHP Version: 5.6.2
 
@@ -40,6 +40,17 @@ CREATE TABLE IF NOT EXISTS `doctors` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `login_attempts`
+--
+
+CREATE TABLE IF NOT EXISTS `login_attempts` (
+  `user_id` int(11) NOT NULL,
+  `time` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `medicalrecords`
 --
 
@@ -64,13 +75,14 @@ CREATE TABLE IF NOT EXISTS `medicine` (
   `id` int(100) NOT NULL AUTO_INCREMENT,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `medication_name` varchar(1000) COLLATE utf8_unicode_ci NOT NULL,
-  `medication_dosis` varchar(1000) COLLATE utf8_unicode_ci NOT NULL,
-  `medication_time` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
-  `medication_period` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `medication_dose` varchar(1000) COLLATE utf8_unicode_ci NOT NULL,
+  `medication_frequency` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
+  `prescription_begin` date NOT NULL,
+  `prescription_end` date NOT NULL,
   `medication_link` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
   `medication_warnings` varchar(5000) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=3 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=4 ;
 
 -- --------------------------------------------------------
 
