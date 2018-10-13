@@ -3,6 +3,8 @@
 # OwnHealthRecord
 This repository is about the Own Health Record Application Web App
 
+Developed by <a href="https://github.com/petrk94" target="_blank">Petr Kirpeit</a>
+
 # Newest update
 You want to get every update without waiting for the next release?
 Checkout the Developer Log, there you can see the latest changes and what was made, before it get finally released. 
