@@ -49,6 +49,16 @@ Screenshot from V0.0.1
 ## Attention - Safety - No guarantee
 This software is build by my own, there is **no guarantee** for the safety or secure way that everything is working properly. It is made for selfhosting, so everyone has to take care about the server security and the way of protecting the data. For the login always use a https connection with valid SSL certificate. The Database entries are not encrypted, only the password is hashed and salted.
 
+## Your Own Server - Your Own Security
+This application has to run on a secure environment. So if you run your own medical record on your own server, you have to take care about your own security to keep it running secure.
+
+For that reason, I have collected for you some links which will help to run your server secure:
+
+* https://www.digitalocean.com/community/tutorials/7-security-measures-to-protect-your-servers
+* <a href="https://www.rackaid.com/blog/server-security-tips/" target="_blank">79 Server Security Tips for You to Secure Your Server</a>
+* <a href="https://www.linode.com/docs/security/securing-your-server/" target="_blank">How to Secure Your Server</a>
+* <a href="https://medium.com/viithiisys/10-steps-to-secure-linux-server-for-production-environment-a135109a57c5" target="_blank">10 steps to secure Linux Server for Production Environment</a>
+
 ## Third Party Libraries/Code
 
 The Dashboard theme, developed by Creative Tim is the <a href="https://github.com/creativetimofficial/paper-dashboard" target="_blank">Paper-Dashboard</a> and is licensed by <a href="https://www.creative-tim.com/license/" target="_blank">Creative Tim under MIT License</a>.
