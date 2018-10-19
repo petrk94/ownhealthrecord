@@ -1,4 +1,9 @@
 # The Developer Log
+### 19.10.2018 - run your Server secure
+Hey guys
+
+I just have added some links about how to run your server in a secure way for production usage. I think this are information which you should definitive check out before running OwnHealthRecord for own production usage (even its not yet ready for production). Check out the links in the README file.
+
 ### 13.10.2018 - Guardian
 Hey guys
 
