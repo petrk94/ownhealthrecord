@@ -4,7 +4,14 @@
  
  after one month of break on this project, caused by another workload and unmotivation, I have finally brang me up to continue the work on it. One problem I faced in the Guardian is, that its seach for changed files in subdirectories is not really so easy as I thought. For that reason I have stopped the work on the Guardian for the moment.
  I started now to make some tests with the encryption and decryption of the information in the MySQL database.
+ 
+ The medical-record.php, doctor-list.php and medicine.php pages now encrypt and decrypt the information. After filling the fields with your medical information and click on save entry, the data will be handled by insert-#X.php, this is encrypting the data with AES_ENCRYPT and a secret key you have to use in your db_connect.php. The data will be stored encrypted in the MySQL database table, so even if you get a data breach in your MySQL Server, without the Secret key, your data will be safe (no guarantee, but its a safe way to encrypt data) and can not be decrypted. For a later release I hope to find a solution which make it possible to another key instead of a manually hard coded in the db_connect.php
+ 
+ Check it out on the screenshots below (first: how it looks after sending the data; second: how it looks in your database)
+ 
+ ![](images/Decrypted%20data.PNG)
 
+![](images/encrypted%20data.PNG)
 
 ### 19.10.2018 - run your Server secure
 Hey guys
@@ -27,7 +34,7 @@ as already communicated in the roadmap, I dont like the latest basic html code l
 ![](images/OHR_beautifullogin.PNG)
 
 For now its in the repo only, so you have to clone it to test it, but its just for the eyes, nothing regarding the functionality.
-Ps. Did I told you about the new logo I created :) (ok, an free icon and a text, well how you want tocall it)?
+Ps. Did I told you about the new logo I created :) (ok, an free icon and a text, well how you want to call it)?
 
 ### 11.10.2018 - Start of the Developer Log
 Hello,
