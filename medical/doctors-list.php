@@ -86,13 +86,13 @@ sec_session_start();
                         <p>Patient</p>
                     </a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="#">
                         <i class="ti-view-list-alt"></i>
                         <p>Medical Record</p>
                     </a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="doctors-list.php">
                         <i class="fas fa-user-md"></i>
                         <p>Doctor List</p>
