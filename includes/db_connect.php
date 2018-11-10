@@ -17,6 +17,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+ $SECRET = '12345678910111213141516';
+ 
+ 
 include_once 'psl-config.php';   // Needed because functions.php is not included
 
 $mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
