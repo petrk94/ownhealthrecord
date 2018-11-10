@@ -86,7 +86,7 @@ sec_session_start();
                         <p>Patient</p>
                     </a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="#">
                         <i class="ti-view-list-alt"></i>
                         <p>Medical Record</p>
@@ -104,7 +104,7 @@ sec_session_start();
                         <p>Fitness Data</p>
                     </a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="medicine.php">
                         <i class="fas fa-pills"></i>
                         <p>Medicine</p>
