@@ -197,7 +197,7 @@ sec_session_start();
                                     	<th>Adress</th>
                                     	<th>Phone</th>
 										<th>Mail</th>
-										<th>Threatment Period</th>
+										<th>Treatment Period</th>
                                     </thead>
                                     <tbody>							
 										<tr>
@@ -207,7 +207,7 @@ sec_session_start();
 											<td><input type="text" class="form-control" name="address" placeholder="Address"></textarea></td>
 											<td><input type="text" class="form-control" name="phone" placeholder="Phone"></textarea></td>
 											<td><input type="text" class="form-control" name="email" placeholder="Email"></td>
-											<td><input type="text" class="form-control" name="threatment_period" placeholder="Period of Threatment"></textarea></td>
+											<td><input type="text" class="form-control" name="treatment_period" placeholder="Period of Treatment"></textarea></td>
 											<td><button type="submit" class="btn btn-primary">Save entry</button></td>
 										</form>
 										</tr>
@@ -243,22 +243,22 @@ sec_session_start();
                                     	<th>Adress</th>
                                     	<th>Phone</th>
 										<th>Mail</th>
-										<th>Threatment Period</th>
+										<th>Treatment Period</th>
                                     </thead>
 <?php
 require "../includes/db_connect.php";
 
-$query = "SELECT * FROM doctors"; //You don't need a ; like you do in SQL
+$query = "SELECT doctor_name, AES_DECRYPT(doctor_name, $SECRET),doctor_type, AES_DECRYPT(doctor_type, $SECRET),address, AES_DECRYPT(address, $SECRET),phone, AES_DECRYPT(phone, $SECRET),email, AES_DECRYPT(email, $SECRET),treatment_period,AES_DECRYPT(treatment_period, $SECRET) FROM doctors"; //You don't need a ; like you do in SQL
 $result = mysqli_query($connection, $query);				
 while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through results
 										echo "<tbody>";
 										echo "<tr>";
-                                        echo "<td>" . $row['doctor_name'] . "</td>";
-										echo "<td>" . $row['doctor_type'] . "</td>";
-										echo "<td>" . $row['address'] . "</td>";
-										echo "<td>" . $row['phone'] . "</td>";
-										echo "<td>" . $row['email'] . "</td>";
-										echo "<td>" . $row['threatment_period'] . "</td>";
+                                        echo "<td>" . $row["AES_DECRYPT(doctor_name, $SECRET)"] . "</td>";
+										echo "<td>" . $row["AES_DECRYPT(doctor_type, $SECRET)"] . "</td>";
+										echo "<td>" . $row["AES_DECRYPT(address, $SECRET)"] . "</td>";
+										echo "<td>" . $row["AES_DECRYPT(phone, $SECRET)"] . "</td>";
+										echo "<td>" . $row["AES_DECRYPT(email, $SECRET)"] . "</td>";
+										echo "<td>" . $row["AES_DECRYPT(treatment_period, $SECRET)"] . "</td>";
 										echo "</tr>";
 										echo "</tbody>";
 										}
