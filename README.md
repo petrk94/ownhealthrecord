@@ -47,8 +47,11 @@ Go to the includes folder in your OwnHealthRecord directory and open psl-config.
 
 
 ## Screenshot
+![](images/ownhealthrecord_medrecord%20v0.3.png)
+Screenshot from V0.3
+
 ![](images/ownhealthrecord_medrecord_dashboard.png)
-Screenshot from V0.0.1
+Screenshot from V0.1
 
 ## Attention - Safety - No guarantee
 This software is build by my own, there is **no guarantee** for the safety or secure way that everything is working properly. It is made for selfhosting, so everyone has to take care about the server security and the way of protecting the data. For the login always use a https connection with valid SSL certificate. The Database entries are ~~not~~ encrypted, but this doesnt mean that its 100% secure. The password is hashed and salted.
