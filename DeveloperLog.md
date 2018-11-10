@@ -1,4 +1,11 @@
 # The Developer Log
+### 10.11.2018 - Back to work
+ Hey guys
+ 
+ after one month of break on this project, caused by another workload and unmotivation, I have finally brang me up to continue the work on it. One problem I faced in the Guardian is, that its seach for changed files in subdirectories is not really so easy as I thought. For that reason I have stopped the work on the Guardian for the moment.
+ I started now to make some tests with the encryption and decryption of the information in the MySQL database.
+
+
 ### 19.10.2018 - run your Server secure
 Hey guys
 
