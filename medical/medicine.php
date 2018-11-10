@@ -262,22 +262,23 @@ sec_session_start();
 <?php
 require "../includes/db_connect.php";
 
-$query = "SELECT * FROM medicine"; //You don't need a ; like you do in SQL
+$query = "SELECT date,medication_name, AES_DECRYPT(medication_name, $SECRET),medication_dose, AES_DECRYPT(medication_dose, $SECRET),medication_frequency, AES_DECRYPT(medication_frequency, $SECRET),prescription_begin, AES_DECRYPT(prescription_begin, $SECRET),prescription_end,AES_DECRYPT(prescription_end, $SECRET),medication_link,AES_DECRYPT(medication_link, $SECRET),medication_warnings,AES_DECRYPT(medication_warnings, $SECRET) FROM medicine"; //You don't need a ; like you do in SQL
+
 $result = mysqli_query($connection, $query);						
 while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through results
 										echo "<tbody>";
 										echo "<tr>";
 										echo "<td style=\"padding-right: 0px;padding-left: 8px;\">" . $row['date'] . "</td>";
-                                        echo "<td>" . $row['medication_name'] . "</td>";
-										echo "<td>" . $row['medication_dose'] . "</td>";
-										echo "<td>" . $row['medication_frequency'] . "</td>";
-										echo "<td style=\"text-align:center;\">" . $row['prescription_begin'] . "<br>-<br>" . $row['prescription_end'] . "</td>";
+                                        echo "<td>" . $row["AES_DECRYPT(medication_name, $SECRET)"] . "</td>";
+										echo "<td>" . $row["AES_DECRYPT(medication_dose, $SECRET)"] . "</td>";
+										echo "<td>" . $row["AES_DECRYPT(medication_frequency, $SECRET)"] . "</td>";
+										echo "<td style=\"text-align:center;\">" . $row["AES_DECRYPT(prescription_begin, $SECRET)"] . "<br>-<br>" . $row["AES_DECRYPT(prescription_end, $SECRET)"] . "</td>";
 										//$date_begin = new DateTime($row['prescription_begin']);
 										//$date_end = new DateTime($row['prescription_end']);
 										//$prescriptiondiff=date_diff($date_begin,$date_end);
 										echo "<td>" . $prescriptiondiff . "</td>";
-										echo "<td><a href=" . $row['medication_link'] . ">" . $row['medication_link'] . "</a></td>";
-										echo "<td>" . $row['medication_warnings'] . "</td>";
+										echo "<td><a href=" . $row["AES_DECRYPT(medication_link, $SECRET)"] . ">" . $row["AES_DECRYPT(medication_link, $SECRET)"] . "</a></td>";
+										echo "<td>" . $row["AES_DECRYPT(medication_warnings, $SECRET)"] . "</td>";
 										echo "</tr>";
 										echo "</tbody>";
 										}
