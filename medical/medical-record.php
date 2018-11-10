@@ -242,17 +242,17 @@ sec_session_start();
 <?php
 require "../includes/db_connect.php";
 
-$query = "SELECT * FROM medicalrecords"; //You don't need a ; like you do in SQL
+$query = "SELECT date,location, AES_DECRYPT(location, $SECRET),responsive_doctor, AES_DECRYPT(responsive_doctor, $SECRET),issue_description, AES_DECRYPT(issue_description, $SECRET),diagnosis, AES_DECRYPT(diagnosis, $SECRET),prescribed_solution,AES_DECRYPT(prescribed_solution, $SECRET) FROM medicalrecords"; //You don't need a ; like you do in SQL
 $result = mysqli_query($connection, $query);					
 while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through results
 										echo "<tbody>";
 										echo "<tr>";
                                         echo "<td>" . $row['date'] . "</td>";
-										echo "<td>" . $row['location'] . "</td>";
-										echo "<td>" . $row['responsive_doctor'] . "</td>";
-										echo "<td>" . $row['issue_description'] . "</td>";
-										echo "<td>" . $row['diagnosis'] . "</td>";
-										echo "<td>" . $row['prescribed_solution'] . "</td>";
+										echo "<td>" . $row["AES_DECRYPT(location, $SECRET)"] . "</td>";
+										echo "<td>" . $row["AES_DECRYPT(responsive_doctor, $SECRET)"] . "</td>";
+										echo "<td>" . $row["AES_DECRYPT(issue_description, $SECRET)"] . "</td>";
+										echo "<td>" . $row["AES_DECRYPT(diagnosis, $SECRET)"] . "</td>";
+										echo "<td>" . $row["AES_DECRYPT(prescribed_solution, $SECRET)"] . "</td>";
 										echo "</tr>";
 										echo "</tbody>";
 										}
