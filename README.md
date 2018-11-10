@@ -75,7 +75,11 @@ Here is the code explanation: https://www.wikihow.com/Create-a-Secure-Login-Scri
 - [ ] 2-Factor-Authentication
 - [x] Encrypted medical information in MySQL Database
 - [ ] SQlite3 Support
-- [ ] Guardian (cron script which run in the background and detect changes in the code, if change detected, notify user about possible data breach)
-- [x] ~~nice login form~~ - done!
-- [x] nice signin form
+- 20% - Guardian (cron script which run in the background and detect changes in the code, if change detected, notify user about possible data breach)
+- [x] nice login form
+- [ ] nice signup form
 - [ ] add allergies page (requested via reddit by @Laxmin)
+- [ ] Upload functionality to upload medical images
+- [ ] Timeline/log page, see all updates in your account (updates in medical record, uploaded images, reminder for health checks)
+- [ ] Health Check reminder
+- [ ] Reminder for vaccination (+ emailing function)
