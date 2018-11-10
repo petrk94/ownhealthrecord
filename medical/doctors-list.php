@@ -257,7 +257,7 @@ while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through re
 										echo "<td>" . $row["AES_DECRYPT(doctor_type, $SECRET)"] . "</td>";
 										echo "<td>" . $row["AES_DECRYPT(address, $SECRET)"] . "</td>";
 										echo "<td>" . $row["AES_DECRYPT(phone, $SECRET)"] . "</td>";
-										echo "<td>" . $row["AES_DECRYPT(email, $SECRET)"] . "</td>";
+										echo "<td><a href=\"mailto:" . $row["AES_DECRYPT(email, $SECRET)"] . "\" target=\"_blank\">" . $row["AES_DECRYPT(email, $SECRET)"] . "</a></td>";
 										echo "<td>" . $row["AES_DECRYPT(treatment_period, $SECRET)"] . "</td>";
 										echo "</tr>";
 										echo "</tbody>";
