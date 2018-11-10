@@ -22,10 +22,10 @@ $medication_warnings = $mysqli->real_escape_string($_REQUEST['medication_warning
 
 
 // Attempt insert query execution
-$sql = "INSERT INTO medicine (medication_name, medication_dose, medication_frequency, prescription_begin, prescription_end, medication_link, medication_warnings) VALUES ('$medication_name', '$medication_dose', '$medication_frequency', '$prescription_begin', '$prescription_end', '$medication_link', '$medication_warnings')";
+$sql = "INSERT INTO medicine (medication_name, medication_dose, medication_frequency, prescription_begin, prescription_end, medication_link, medication_warnings) VALUES (AES_ENCRYPT ('$medication_name','$SECRET'), AES_ENCRYPT('$medication_dose','$SECRET'), AES_ENCRYPT('$medication_frequency','$SECRET'), AES_ENCRYPT('$prescription_begin','$SECRET'), AES_ENCRYPT('$prescription_end','$SECRET'), AES_ENCRYPT('$medication_link','$SECRET'), AES_ENCRYPT('$medication_warnings','$SECRET'))";
 if($mysqli->query($sql) === true){
     echo "Records inserted successfully.";
-	header('Location: medicine.php');
+	header('Location: ../medical/medicine.php');
 } else{
     echo "ERROR: Could not able to execute $sql. " . $mysqli->error;
 }
