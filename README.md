@@ -66,7 +66,7 @@ For that reason, I have collected for you some links which will help to run your
 * <a href="https://www.linode.com/docs/security/securing-your-server/" target="_blank">How to Secure Your Server</a>
 * <a href="https://medium.com/viithiisys/10-steps-to-secure-linux-server-for-production-environment-a135109a57c5" target="_blank">10 steps to secure Linux Server for Production Environment</a>
 
-## Third Party Libraries/Code
+## Third Party Libraries/Code/Sources
 
 The Dashboard theme, developed by Creative Tim is the <a href="https://github.com/creativetimofficial/paper-dashboard" target="_blank">Paper-Dashboard</a> and is licensed by <a href="https://www.creative-tim.com/license/" target="_blank">Creative Tim under MIT License</a>.
 
@@ -74,6 +74,10 @@ The Account and Login Functionality code was made by Github User <a href="https:
 His <a href="https://github.com/peredurabefrog/phpSecureLogin" target="_blank">phpSecureLogin</a> Script is very helpful for the implementation of account functionality and to protect the information. 
 Here is the code explanation: https://www.wikihow.com/Create-a-Secure-Login-Script-in-PHP-and-MySQL
 
+The AES_Encryption code based on this tutorial about it:
+http://thinkdiff.net/mysql/encrypt-mysql-data-using-aes-techniques/ by <a href="https://github.com/mahmudahsan" target="_blank">mahmudahsan</a>
+
+https://www.w3resource.com/mysql/encryption-and-compression-functions/aes_decrypt().php
 # Roadmap
 - [ ] 2-Factor-Authentication
 - [x] Encrypted medical information in MySQL Database
