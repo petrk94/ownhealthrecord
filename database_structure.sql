@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 13, 2018 at 03:38 PM
+-- Generation Time: Nov 10, 2018 at 04:42 PM
 -- Server version: 5.1.73-log
 -- PHP Version: 5.6.2
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `petrk_medicalrecord`
+-- Database: `petrk_ohrtest`
 --
 
 -- --------------------------------------------------------
@@ -28,14 +28,14 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `doctors` (
   `id` int(100) NOT NULL AUTO_INCREMENT,
-  `doctor_name` varchar(1000) COLLATE utf8_unicode_ci NOT NULL,
-  `doctor_type` varchar(1000) COLLATE utf8_unicode_ci NOT NULL,
-  `address` varchar(1000) COLLATE utf8_unicode_ci NOT NULL,
-  `phone` varchar(1000) COLLATE utf8_unicode_ci NOT NULL,
-  `email` varchar(1000) COLLATE utf8_unicode_ci NOT NULL,
-  `treatment_period` varchar(1000) COLLATE utf8_unicode_ci NOT NULL,
+  `doctor_name` varbinary(1000) NOT NULL,
+  `doctor_type` varbinary(1000) NOT NULL,
+  `address` varbinary(1000) NOT NULL,
+  `phone` varbinary(1000) NOT NULL,
+  `email` varbinary(1000) NOT NULL,
+  `treatment_period` varbinary(1000) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=16 ;
 
 -- --------------------------------------------------------
 
@@ -44,9 +44,9 @@ CREATE TABLE IF NOT EXISTS `doctors` (
 --
 
 CREATE TABLE IF NOT EXISTS `login_attempts` (
-  `user_id` int(11) NOT NULL,
-  `time` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `user_id` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `time` time NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -57,13 +57,13 @@ CREATE TABLE IF NOT EXISTS `login_attempts` (
 CREATE TABLE IF NOT EXISTS `medicalrecords` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `location` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `responsive_doctor` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `issue_description` mediumtext COLLATE utf8_unicode_ci NOT NULL,
-  `diagnosis` mediumtext COLLATE utf8_unicode_ci NOT NULL,
-  `prescribed_solution` varchar(5000) COLLATE utf8_unicode_ci NOT NULL,
+  `location` varbinary(50) NOT NULL,
+  `responsive_doctor` varbinary(50) NOT NULL,
+  `issue_description` varbinary(1000) NOT NULL,
+  `diagnosis` varbinary(1000) NOT NULL,
+  `prescribed_solution` varbinary(5000) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=13 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=17 ;
 
 -- --------------------------------------------------------
 
@@ -74,15 +74,15 @@ CREATE TABLE IF NOT EXISTS `medicalrecords` (
 CREATE TABLE IF NOT EXISTS `medicine` (
   `id` int(100) NOT NULL AUTO_INCREMENT,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `medication_name` varchar(1000) COLLATE utf8_unicode_ci NOT NULL,
-  `medication_dose` varchar(1000) COLLATE utf8_unicode_ci NOT NULL,
-  `medication_frequency` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
-  `prescription_begin` date NOT NULL,
-  `prescription_end` date NOT NULL,
-  `medication_link` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
-  `medication_warnings` varchar(5000) COLLATE utf8_unicode_ci NOT NULL,
+  `medication_name` varbinary(1000) NOT NULL,
+  `medication_dose` varbinary(1000) NOT NULL,
+  `medication_frequency` varbinary(100) NOT NULL,
+  `prescription_begin` varbinary(100) NOT NULL,
+  `prescription_end` varbinary(100) NOT NULL,
+  `medication_link` varbinary(500) NOT NULL,
+  `medication_warnings` varbinary(5000) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=4 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=5 ;
 
 -- --------------------------------------------------------
 
@@ -97,7 +97,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `password` char(128) NOT NULL,
   `salt` char(128) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
