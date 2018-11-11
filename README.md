@@ -84,7 +84,7 @@ https://www.w3resource.com/mysql/encryption-and-compression-functions/aes_decryp
 - [ ] SQlite3 Support
 - 20% - Guardian (cron script which run in the background and detect changes in the code, if change detected, notify user about possible data breach)
 - [x] nice login form
-- [ ] nice signup form
+- [x] nice signup form
 - [ ] add allergies page (requested via reddit by @Laxmin)
 - [ ] Upload functionality to upload medical images
 - [ ] Timeline/log page, see all updates in your account (updates in medical record, uploaded images, reminder for health checks)
