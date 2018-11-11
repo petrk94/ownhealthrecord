@@ -87,7 +87,7 @@ sec_session_start();
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="medical-record.php">
                         <i class="ti-view-list-alt"></i>
                         <p>Medical Record</p>
                     </a>
