@@ -95,7 +95,7 @@ sec_session_start();
                     </a>
                 </li>				
                 <li>
-                    <a href="#">
+                    <a href="fitness.php">
                         <i class="far fa-heart"></i>
                         <p>Fitness Data</p>
                     </a>
@@ -107,19 +107,19 @@ sec_session_start();
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="allergies.php">
                         <i class="fas fa-allergies"></i>
                         <p>Allergies</p>
                     </a>
                 </li>				
                 <li>
-                    <a href="#">
+                    <a href="vaccination.php">
                         <i class="fas fa-syringe"></i>
                         <p>Vaccinations</p>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="sleep.php">
                         <i class="fas fa-bed"></i>
                         <p>Sleep Data</p>
                     </a>
