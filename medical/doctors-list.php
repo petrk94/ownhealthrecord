@@ -93,7 +93,7 @@ sec_session_start();
                     </a>
                 </li>
                 <li class="active">
-                    <a href="doctors-list.php">
+                    <a href="#">
                         <i class="fas fa-user-md"></i>
                         <p>Doctor List</p>
                     </a>
