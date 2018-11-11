@@ -1,4 +1,23 @@
 # The Developer Log
+### 11.11.2018 - Some stuff for yesterday
+
+Hey guys
+
+yesterday I have at the end published 2 releases (v0.3-alpha and v0.3.1 fix), so here is a summary of the updates made in the current version v0.3.1:
+
+* ADDED AES_Encryption functio
+* ADDED Allergies Section (preparation)
+* ADDED beautiful login form
+* ADDED new signup form
+* ENHANCED Login.php is now index.php by default
+* ENHANCED doctorlist.php email addresses contains now mailto: handler to write emails on click
+* ENHANCED Medication Section, now has more space to make the entries
+* FIXED Typos fixed
+* FIXED Some broken links in the sidebar
+
+As you see, there are some cool changes and I hope to realize soon more.
+My current plan is to release every weekend a new Version. This has the reason, due Im working while the week and can not take care too much about a free time project Im doing here.
+
 ### 10.11.2018 - Back to work
  Hey guys
  
