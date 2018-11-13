@@ -4,7 +4,7 @@ Hey guys
 
 through my last reddit post in the subreddit selfhoster, I got 2 responses regarding the security of the OwnHealthRecord application and so I have checked it and it is true, the webapp is not totally secure and still contains some points to harden it before it can be used in production. Im happy about this, due if it doesnt were open source, no one would know about that security bugs. Now I know what to change and to fix and hope to get some security issues fixed until the next release, but before I have to test it. Unfortunately, it seems that the performance is going through the additional security down and so it take longer to switch to another page, but I think this can be even improved.
 
-On my test instance I made some tests and got a A+ in the results.
+On my test instance I made some tests and got a A+ in the results of a <a href="https://securityheaders.com" target="_blank">securityheaders.com</a>.
 If you running it already, than you will get a F in the test, due there is no secure headers inside. 
 
 **Please wait until the application is far enough developed, before using it productive**
