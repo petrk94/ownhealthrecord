@@ -15,10 +15,18 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+sec_session_start();
+
+ // CSRF Protection
+if (empty($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
+$csrf_token = $_SESSION['csrf_token']; 
+
+
 include_once '../includes/db_connect.php';
 include_once '../includes/functions.php';
 
-sec_session_start();
 ?>
 <!doctype html>
 <html lang="en">
@@ -168,7 +176,7 @@ sec_session_start();
                               </ul>
                         </li>
 						<li>
-                            <a href="../includes/logout.php">
+                            <a href="../includes/logout.php?csrf=$_SESSION['csrf_token']">
 								<i class="ti-settings"></i>
 								<p>logout</p>
                             </a>
@@ -199,7 +207,7 @@ sec_session_start();
 									</thead>
                                     <tbody>							
 										<tr>
-										<form action="../includes/insert-medicine.php" method="post">
+										<form action="../includes/insert-medicine.php?csrf=$_SESSION['csrf_token']" method="post">
 											<td><input type="text" class="form-control" name="medication_name" placeholder="Medication Name"></td>
 											<td><textarea id="note" class="form-control" name="medication_dose" placeholder="Injection, Tablet, Capsule, Syrup, Ointment, Suppository, etc"></textarea></td>
 											<td><textarea id="note" class="form-control" name="medication_frequency" placeholder="once daily/twice daily/thrice daily/every ___ hours/other"></textarea></td>
@@ -222,7 +230,10 @@ sec_session_start();
 											<td><input type="text" class="form-control" name="medication_link" placeholder="Own link to medication"></td>
 											<td><textarea id="note" class="form-control" name="medication_warnings" placeholder="Warnings / notes"></textarea></td>
 											<td><button type="submit" class="btn btn-primary">Save entry</button></td>
-										</form>
+											<!-- CSRF Protection -->
+											<input type="hidden" name="csrf" value="'.$_SESSION['csrf_token'].'">
+
+											</form>
 										</tr>
 									</tbody>
 								</table>
@@ -260,6 +271,11 @@ sec_session_start();
 										<th>Warnings</th>
                                     </thead>
 <?php
+ // check whether csrf token in _SESSION is valid, if not, die and stop script
+if($_POST['csrf'] !== $_SESSION['csrf_token']) {
+  die("invalid Token");
+}
+
 require "../includes/db_connect.php";
 
 $query = "SELECT date,medication_name, AES_DECRYPT(medication_name, $SECRET),medication_dose, AES_DECRYPT(medication_dose, $SECRET),medication_frequency, AES_DECRYPT(medication_frequency, $SECRET),prescription_begin, AES_DECRYPT(prescription_begin, $SECRET),prescription_end,AES_DECRYPT(prescription_end, $SECRET),medication_link,AES_DECRYPT(medication_link, $SECRET),medication_warnings,AES_DECRYPT(medication_warnings, $SECRET) FROM medicine"; //You don't need a ; like you do in SQL

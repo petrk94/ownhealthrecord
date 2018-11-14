@@ -15,10 +15,18 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+sec_session_start();
+
+ // CSRF Protection
+if (empty($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
+$csrf_token = $_SESSION['csrf_token']; 
+
+
 include_once '../includes/db_connect.php';
 include_once '../includes/functions.php';
 
-sec_session_start();
 ?>
 <!doctype html>
 <html lang="en">
@@ -168,7 +176,7 @@ sec_session_start();
                               </ul>
                         </li>
 						<li>
-                            <a href="../includes/logout.php">
+                            <a href="../includes/logout.php?csrf=$_SESSION['csrf_token']">
 								<i class="ti-settings"></i>
 								<p>logout</p>
                             </a>
@@ -201,7 +209,7 @@ sec_session_start();
                                     </thead>
                                     <tbody>							
 										<tr>
-										<form action="../includes/insert-doctor.php" method="post">
+										<form action="../includes/insert-doctor.php?csrf=$_SESSION['csrf_token']" method="post">
 											<td><input type="text" class="form-control" name="doctor_name" placeholder="Doctor Name"></td>
 											<td><input type="text" class="form-control" name="doctor_type" placeholder="Doctor Profession"></textarea></td>
 											<td><input type="text" class="form-control" name="address" placeholder="Address"></textarea></td>
@@ -209,7 +217,10 @@ sec_session_start();
 											<td><input type="text" class="form-control" name="email" placeholder="Email"></td>
 											<td><input type="text" class="form-control" name="treatment_period" placeholder="Period of Treatment"></textarea></td>
 											<td><button type="submit" class="btn btn-primary">Save entry</button></td>
-										</form>
+											<!-- CSRF Protection -->
+											<input type="hidden" name="csrf" value="'.$_SESSION['csrf_token'].'">
+
+											</form>
 										</tr>
 									</tbody>
 								</table>
@@ -246,6 +257,11 @@ sec_session_start();
 										<th>Treatment Period</th>
                                     </thead>
 <?php
+ // check whether csrf token in _SESSION is valid, if not, die and stop script
+if($_POST['csrf'] !== $_SESSION['csrf_token']) {
+  die("invalid Token");
+}
+
 require "../includes/db_connect.php";
 
 $query = "SELECT doctor_name, AES_DECRYPT(doctor_name, $SECRET),doctor_type, AES_DECRYPT(doctor_type, $SECRET),address, AES_DECRYPT(address, $SECRET),phone, AES_DECRYPT(phone, $SECRET),email, AES_DECRYPT(email, $SECRET),treatment_period,AES_DECRYPT(treatment_period, $SECRET) FROM doctors"; //You don't need a ; like you do in SQL
