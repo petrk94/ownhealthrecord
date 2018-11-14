@@ -1,4 +1,19 @@
 # The Developer Log
+### 15.11.2018 - CSRF is fixed now(?)
+Hey guys
+
+I took the advices from redditors serious and looked for solutions how to fix the security bugs in the OwnHealthRecord. So for now I think the CSRF problem should be fixed. I have used tutorial manuals for that have applied the protection code on the links where sensitive information are send.
+The latest changes you can see now in medicine, medical-record, doctors-list; 
+For the later coming pages, this will be added by default.
+I dont have tested the changes for safety, so I will do, if I have implemented a test function. If you want to test this fix, please do it and let me know over opening an issue. :) 
+
+Used sources to fix it:
+
+https://stackoverflow.com/questions/6287903/how-to-properly-add-csrf-token-using-php/31683058#31683058
+
+https://www.php-einfach.de/experte/php-sicherheit/cross-site-request-forgery-csrf/
+
+
 ### 13.11.2018 - Open Source and Security
 Hey guys
 
