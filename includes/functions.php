@@ -214,3 +214,13 @@ function esc_url($url) {
         return $url;
     }
 }
+
+	// protect before XSS attacks; the XSS code is unable to be executed in the browser, due 
+	// it convert the special chars to HTML-code
+	// protect against persistive and non-persistive XSS attacks
+function XSSdisarm($string) {
+  return htmlspecialchars($string, ENT_QUOTES, 'UTF-8');
+}
+
+
+
