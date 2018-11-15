@@ -215,9 +215,12 @@ function esc_url($url) {
     }
 }
 
-	// protect before XSS attacks; the XSS code is unable to be executed in the browser, due 
-	// it convert the special chars to HTML-code
-	// protect against persistive and non-persistive XSS attacks
+	/* 	protect before XSS attacks; the XSS code is unable to be executed in the browser, due 
+		it convert the special chars to HTML-code
+		protect against persistive and non-persistive XSS attacks
+		Example:  echo "<td>" . XSSdisarm($row["AES_DECRYPT(medication_name, $SECRET)"]) . "</td>";
+	
+	*/
 function XSSdisarm($string) {
   return htmlspecialchars($string, ENT_QUOTES, 'UTF-8');
 }
