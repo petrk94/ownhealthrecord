@@ -269,12 +269,12 @@ $result = mysqli_query($connection, $query);
 while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through results
 										echo "<tbody>";
 										echo "<tr>";
-                                        echo "<td>" . $row["AES_DECRYPT(doctor_name, $SECRET)"] . "</td>";
-										echo "<td>" . $row["AES_DECRYPT(doctor_type, $SECRET)"] . "</td>";
-										echo "<td>" . $row["AES_DECRYPT(address, $SECRET)"] . "</td>";
-										echo "<td>" . $row["AES_DECRYPT(phone, $SECRET)"] . "</td>";
-										echo "<td><a href=\"mailto:" . $row["AES_DECRYPT(email, $SECRET)"] . "\" target=\"_blank\">" . $row["AES_DECRYPT(email, $SECRET)"] . "</a></td>";
-										echo "<td>" . $row["AES_DECRYPT(treatment_period, $SECRET)"] . "</td>";
+                                        echo "<td>" . XSSdisarm($row["AES_DECRYPT(doctor_name, $SECRET)"]) . "</td>";
+										echo "<td>" . XSSdisarm($row["AES_DECRYPT(doctor_type, $SECRET)"]) . "</td>";
+										echo "<td>" . XSSdisarm($row["AES_DECRYPT(address, $SECRET)"]) . "</td>";
+										echo "<td>" . XSSdisarm($row["AES_DECRYPT(phone, $SECRET)"]) . "</td>";
+										echo "<td><a href=\"mailto:" . XSSdisarm($row["AES_DECRYPT(email, $SECRET)"]) . "\" target=\"_blank\">" . XSSdisarm($row["AES_DECRYPT(email, $SECRET)"]) . "</a></td>";
+										echo "<td>" . XSSdisarm($row["AES_DECRYPT(treatment_period, $SECRET)"]) . "</td>";
 										echo "</tr>";
 										echo "</tbody>";
 										}

@@ -262,12 +262,12 @@ $result = mysqli_query($connection, $query);
 while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through results
 										echo "<tbody>";
 										echo "<tr>";
-                                        echo "<td>" . $row['date'] . "</td>";
-										echo "<td>" . $row["AES_DECRYPT(location, $SECRET)"] . "</td>";
-										echo "<td>" . $row["AES_DECRYPT(responsive_doctor, $SECRET)"] . "</td>";
-										echo "<td>" . $row["AES_DECRYPT(issue_description, $SECRET)"] . "</td>";
-										echo "<td>" . $row["AES_DECRYPT(diagnosis, $SECRET)"] . "</td>";
-										echo "<td>" . $row["AES_DECRYPT(prescribed_solution, $SECRET)"] . "</td>";
+                                        echo "<td>" . XSSdisarm($row['date']) . "</td>";
+										echo "<td>" . XSSdisarm($row["AES_DECRYPT(location, $SECRET)"]) . "</td>";
+										echo "<td>" . XSSdisarm($row["AES_DECRYPT(responsive_doctor, $SECRET)"]) . "</td>";
+										echo "<td>" . XSSdisarm($row["AES_DECRYPT(issue_description, $SECRET)"]) . "</td>";
+										echo "<td>" . XSSdisarm($row["AES_DECRYPT(diagnosis, $SECRET)"]) . "</td>";
+										echo "<td>" . XSSdisarm($row["AES_DECRYPT(prescribed_solution, $SECRET)"]) . "</td>";
 										echo "</tr>";
 										echo "</tbody>";
 										}
