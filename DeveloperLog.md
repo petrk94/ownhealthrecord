@@ -7,6 +7,11 @@ This will prevent that XSS attacks will be executed in the application. I have t
 The XSS based DOM attack which attack the JS part should be not possible, due there is no js which belongs to the formulas after the login.
 The new protection will be released in the next version this weekend.
 
+Used sources to fix it:
+
+https://stackoverflow.com/questions/1996122/how-to-prevent-xss-with-html-php
+
+https://www.php-einfach.de/experte/php-sicherheit/cross-site-scripting-xss-in-php/
 
 ### 15.11.2018 - CSRF is fixed now(?)
 Hey guys
