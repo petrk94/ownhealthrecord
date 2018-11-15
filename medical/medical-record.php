@@ -132,6 +132,12 @@ include_once '../includes/functions.php';
                         <p>Sleep Data</p>
                     </a>
                 </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-file-upload"></i>
+                        <p>Medical Documents</p>
+                    </a>
+                </li>				
             </ul>
     	</div>
     </div>
