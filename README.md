@@ -87,6 +87,11 @@ https://www.w3resource.com/mysql/encryption-and-compression-functions/aes_decryp
 - [x] nice signup form
 - 10% add allergies page (requested via reddit by @Laxmin)
 - [ ] Upload functionality to upload medical images
-- [ ] Timeline/log page, see all updates in your account (updates in medical record, uploaded images, reminder for health checks)
+- [ ] Export functionality (divers. formats)
+
+
+# Planned Featues
+- [ ] Upload possibility for medical file extensions (https://en.wikipedia.org/wiki/List_of_file_formats#Biomedical_imaging)
 - [ ] Health Check reminder
 - [ ] Reminder for vaccination (+ emailing function)
+- [ ] Timeline/log page, see all updates in your account (updates in medical record, uploaded images, reminder for health checks)
