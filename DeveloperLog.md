@@ -1,4 +1,13 @@
 # The Developer Log
+### 15.11.2018 - XSS protection applied
+Hey guys
+
+Today in the morning I have applied the XSS hardening fix to the github repo, this can be found in the functions.php, the function is called XSSdisarm ;) 
+This will prevent that XSS attacks will be executed in the application. I have tested the hardening against persistive and non-persistive attacks.
+The XSS based DOM attack which attack the JS part should be not possible, due there is no js which belongs to the formulas after the login.
+The new protection will be released in the next version this weekend.
+
+
 ### 15.11.2018 - CSRF is fixed now(?)
 Hey guys
 
