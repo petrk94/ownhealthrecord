@@ -15,17 +15,19 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-sec_session_start();
-
+ include_once '../includes/functions.php';
+ include_once '../includes/db_connect.php';
  // CSRF Protection
 if (empty($_SESSION['csrf_token'])) {
     $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
 }
-$csrf_token = $_SESSION['csrf_token']; 
 
 
-include_once '../includes/db_connect.php';
-include_once '../includes/functions.php';
+sec_session_start();
+
+
+
+
 
 ?>
 <!doctype html>
@@ -195,7 +197,21 @@ include_once '../includes/functions.php';
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
-
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Upload your Documents</h4>
+                                <p class="category">Here you can upload your medical documents</p>
+                            </div>
+								<div class="content">
+								
+									<form action="/upload/upload.php" method="post" enctype="multipart/form-data" style="display: flex;">
+										Select image to upload:
+										<input type="file" name="fileToUpload" id="fileToUpload">
+										<input type="submit" value="Upload Image" name="submit">
+									</form>
+								</div>
+							
+                        </div>
                     </div>
 
                 </div>
