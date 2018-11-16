@@ -15,10 +15,20 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-include_once '../includes/db_connect.php';
-include_once '../includes/functions.php';
+ include_once '../includes/functions.php';
+ include_once '../includes/db_connect.php';
+ // CSRF Protection
+if (empty($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
+
 
 sec_session_start();
+
+
+
+
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -168,7 +178,7 @@ sec_session_start();
                               </ul>
                         </li>
 						<li>
-                            <a href="../includes/logout.php">
+                            <a href="../includes/logout.php?csrf=$_SESSION['csrf_token']">
 								<i class="ti-settings"></i>
 								<p>logout</p>
                             </a>
