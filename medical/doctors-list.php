@@ -138,6 +138,12 @@ sec_session_start();
                         <p>Sleep Data</p>
                     </a>
                 </li>
+                <li>
+                    <a href="medical-documents.php">
+                        <i class="fas fa-file-upload"></i>
+                        <p>Medical Documents</p>
+                    </a>
+                </li>					
             </ul>
     	</div>
     </div>

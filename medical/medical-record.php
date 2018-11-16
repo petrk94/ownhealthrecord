@@ -135,7 +135,7 @@ sec_session_start();
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="medical-documents.php">
                         <i class="fas fa-file-upload"></i>
                         <p>Medical Documents</p>
                     </a>
