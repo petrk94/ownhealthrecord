@@ -254,7 +254,7 @@ sec_session_start();
 	 $atext="Show";}
 
 	 // Opens directory
-	 $myDirectory=opendir("./uploads/");
+	 $myDirectory=opendir("../uploads");
 
 	// Gets each entry
 	while($entryName=readdir($myDirectory)) {
