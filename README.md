@@ -86,7 +86,7 @@ https://www.w3resource.com/mysql/encryption-and-compression-functions/aes_decryp
 - [x] nice login form
 - [x] nice signup form
 - 10% add allergies page (requested via reddit by @Laxmin)
-- [ ] Upload functionality to upload medical images
+- [x] Upload functionality to upload medical images
 - [ ] Export functionality (divers. formats)
 
 
