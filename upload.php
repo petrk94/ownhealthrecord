@@ -1,5 +1,5 @@
 <?php
-$upload_folder = '/'; //Das Upload-Verzeichnis
+$upload_folder = 'uploads/'; //Das Upload-Verzeichnis
 $filename = pathinfo($_FILES['datei']['name'], PATHINFO_FILENAME);
 $extension = strtolower(pathinfo($_FILES['datei']['name'], PATHINFO_EXTENSION));
  
