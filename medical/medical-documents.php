@@ -204,9 +204,9 @@ sec_session_start();
                             </div>
 								<div class="content">
 								
-									<form action="../upload/upload.php" method="post" enctype="multipart/form-data" style="display: flex;">
+									<form id="upload" method="post" action="../upload.php" enctype="multipart/form-data" style="display: flex;">
 										Select image to upload:
-										<input type="file" name="fileToUpload" id="fileToUpload">
+										<input type="file" name="datei" id="datei">
 										<input type="submit" value="Upload Image" name="submit">
 									</form>
 								</div>
