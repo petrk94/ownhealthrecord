@@ -50,8 +50,8 @@ if (login_check($mysqli) == true) {
 
     <!-- Login Form -->
     <form action="includes/process_login.php" method="post" name="login_form">
-      <input type="text" id="login" class="fadeIn second" name="email" placeholder="login">
-      <input type="password" id="password" class="fadeIn third" name="password" placeholder="password">
+      <input type="text" id="login" class="fadeIn second" name="email" placeholder="Email">
+      <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password">
       <input type="submit" class="fadeIn fourth" value="Login" onclick="formhash(this.form, this.form.password);">
     </form>
 	
