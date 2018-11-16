@@ -1,4 +1,15 @@
 # The Developer Log
+### 16.11.2018 - Bug fixes and upload functionality
+Hey guys
+
+Today I have made some bug fixes which caused by the applying of the security functions. 
+Additional I have added now the upload functionality for the medical-document.php where you will be able to upload documents, but still its not protected, so everyone would be able to access this files. This for the moment more a demonstration of which kind of function will come.
+I had in plan integrate even viewer libaries to allow the user to view the medical files like DICOM etc. inside OwnHealthRecord.
+
+Furthermode beside being able to upload the files, you can view and open them over a directory listing. Unfortunately its still some bugged and I could not solve it for the moment, so the modified date and size doesnt shows up (can you fix it?). 
+
+![](images/uploader.gif)
+
 ### 15.11.2018 - XSS protection applied
 Hey guys
 
