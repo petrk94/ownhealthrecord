@@ -1,4 +1,18 @@
 # The Developer Log
+### 18.11.2018 - Plans for the next release v0.5
+Hey guys
+
+through your great feedback on the last reddit thread, I take your ideas very welcome. For that the next release will be more focused on secure.
+
+Below you will see a list which things has to be added:
+
+* **Replace** <a href="https://www.reddit.com/r/selfhosted/comments/9xrinq/ownhealthrecord_v04_alpha_released_for_all_who/e9yb1sr/" target="_blank">**SHA-512 with Argon2**</a>
+* **Replacing the hard coded secret key in db_connect.php with a random generated** (*While data is encrypted in the DB, you're using the same encryption key for everything and everyone.The key is then stored on the app's config file in plain text. Best practice is to: use a different key for each record, and derive that key from an "user key" which is unique to each user. The user's key should be encrypted as well, using a key derived from the user's password (don't use the user's password as user key, because passwords can change).*)
+* **Find a better method for MySQL Encryption**
+(*You are encrypting data using MySQL's AES_ENCRYPT, which defaults to 128-bit keys and ECB mode, with no IV. This is not recommended. See this excellent thread: https://crypto.stackexchange.com/questions/20941/why-shouldnt-i-use-ecb-encryption*)
+* **Replace password validation with session validation**
+(*You don't need to check the password on every single page to validate if the session is active. Session variables are stored in the server, and so it's just redundant. Instead, focus on protecting the session token (see #4), and make sessions shorter.*)
+
 ### 16.11.2018 - Bug fixes and upload functionality
 Hey guys
 
