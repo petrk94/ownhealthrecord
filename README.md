@@ -87,6 +87,8 @@ https://www.w3resource.com/mysql/encryption-and-compression-functions/aes_decryp
 - [x] nice signup form
 - 10% add allergies page (requested via reddit by @Laxmin)
 - [x] Upload functionality to upload medical images
+
+  - [ ] add DICOM Viewer (https://www.dicomlibrary.com/; https://github.com/nanodocumet/Nanodicom; https://deanvaughan.org/wordpress/dicom-php-class/; )
 - [ ] Export functionality (divers. formats)
 
 
