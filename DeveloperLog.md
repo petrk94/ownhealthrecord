@@ -1,4 +1,21 @@
 # The Developer Log
+### 19.11.2018 - Great way for encryption found!
+Hey guys
+
+I found randomly an interesting article by a developer who shared the easy way of encryption in php.
+
+https://nazmulahsan.me/simple-two-way-function-encrypt-decrypt-string/
+
+With this function and code snippets, I will adapt it for the encryption of the data in OwnHealthRecord v0.5-ALPHA.
+
+@ItalyPaleAle has even explained his idea how to solve the problem with secret key:
+
+1. Each record is encrypted with a separate key. The key is encrypted and stored In the same row as the record. 
+2. To encrypt the key, use a “master key” derived from the user’s password. Store this master key in the same row as the user’s data. 
+3. When the user logs in, decrypt the master key and keep it in memory for the length of the session.
+
+I hope this can be integrated easily and make the whole application more safe.
+
 ### 18.11.2018 - The Installer is back! (and Secret key problem)
 Hey guys
 
