@@ -1,4 +1,19 @@
 # The Developer Log
+### 22.11.2018 - Busy and Chart Libraries
+Hey guys
+
+I just want to give you an update, that this week/weekend I will have no time to make an update of the OwnHealthRecord. This has personal reasons and even financial stuff, I have to work more to earn more money and so one (Capitalism, you know?), I would like to spend more time in the development, but I suppose no one want to buy it as product due its not finished, donation will be not enough and providing it as a service is not possible, due its not certified as medical software.
+
+Anyway, I want to update you about, that I took a look on some nice charts for it, which will come a later time on the dashboard and will visualize as example, your weight over time etc.
+
+Here are some libraries where I think this can be used (at least one of them in future):
+
+* http://visjs.org/
+* https://c3js.org/
+* https://www.chartjs.org/
+* https://github.com/danvk/dygraphs
+
+
 ### 19.11.2018 - Great way for encryption found!
 Hey guys
 
@@ -15,6 +30,8 @@ With this function and code snippets, I will adapt it for the encryption of the 
 3. When the user logs in, decrypt the master key and keep it in memory for the length of the session.
 
 I hope this can be integrated easily and make the whole application more safe.
+
+Additional information around hashing security https://crackstation.net/hashing-security.htm
 
 ### 18.11.2018 - The Installer is back! (and Secret key problem)
 Hey guys
