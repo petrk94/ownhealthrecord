@@ -11,8 +11,8 @@ Check the developer log to see the latest changes before they release.
 ---> <a href="DeveloperLog.md" target="_blank">DEVELOPER LOG</a>
 
 ## Why am I making this?
-The problem I am faced with is that each time I got a new doctor, I had to provide a lot of information manually; this led to everyone of my doctors having only a snippet of my medical records.
-This can cause problems, as the doctor needs my records to see my previous health, and how it is affecting my current health. Without this knowledge the doctor could misdiagnose my illness and impede my path to regain my health.
+The problem I am faced with is that each time I get a new doctor, I have to provide a lot of information manually; this leads to everyone of my doctors having only a snippet of my medical records.
+This can cause problems, as the doctor needs my records to see my previous health, and how it is affecting my current health. Without this knowledge the doctor could misdiagnose my illness and impede my path recovery.
 For these reasons, and because the German Insurances and Doctor Software Supplier are unable to release their own solution, I have decided to make OwnHealthRecord.
 
 ## When will it be ready?
