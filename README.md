@@ -55,7 +55,7 @@ Screenshot from V0.3
 ![](images/ownhealthrecord_medrecord_dashboard.png)
 Screenshot from V0.1
 
-## Attention - Safety - No guarantee
+## Attention - No guarantees
 This software is built by me, there is **no guarantee** that everything will work properly. It is made for selfhosting, so you must take care of the server's security and protection of the data. For the login always use an HTTPS connection with a valid SSL certificate. The database entries are encrypted, but this doesn't guarantee the data's security. The password is hashed and salted for improved security.
 
 ## Your own server - Your own security
