@@ -7,7 +7,7 @@ Developed by <a href="https://github.com/petrk94" target="_blank">Petr Kirpeit</
 
 # Newest update
 Want to get every update without waiting for the next release?
-Check the Developer Log to see the latest changes, before it releases. 
+Check the developer log to see the latest changes before they release. 
 ---> <a href="DeveloperLog.md" target="_blank">DEVELOPER LOG</a>
 
 ## Why am I making this?
