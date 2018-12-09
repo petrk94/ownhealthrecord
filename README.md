@@ -109,3 +109,4 @@ https://www.w3resource.com/mysql/encryption-and-compression-functions/aes_decryp
 - [ ] Timeline/log page, see all updates in your account (updates in medical record, uploaded images, reminder for health checks)
 - [ ] Multi User functionality
 - [ ] API 
+ 
