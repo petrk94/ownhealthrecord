@@ -1,4 +1,6 @@
 ![](images/ownhealthrecord_logo.png)
+[![Backers on Open Collective](https://opencollective.com/ownhealthrecord/backers/badge.svg)](#backers)
+ [![Sponsors on Open Collective](https://opencollective.com/ownhealthrecord/sponsors/badge.svg)](#sponsors) 
 
 # OwnHealthRecord
 This is a repository for the Own Health Record Application Web App
@@ -110,3 +112,32 @@ https://www.w3resource.com/mysql/encryption-and-compression-functions/aes_decryp
 - [ ] Multi User functionality
 - [ ] API 
  
+## Contributors
+
+This project exists thanks to all the people who contribute. 
+<a href="https://github.com/petrk94/ownhealthrecord/graphs/contributors"><img src="https://opencollective.com/ownhealthrecord/contributors.svg?width=890&button=false" /></a>
+
+
+## Backers
+
+Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/ownhealthrecord#backer)]
+
+<a href="https://opencollective.com/ownhealthrecord#backers" target="_blank"><img src="https://opencollective.com/ownhealthrecord/backers.svg?width=890"></a>
+
+
+## Sponsors
+
+Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/ownhealthrecord#sponsor)]
+
+<a href="https://opencollective.com/ownhealthrecord/sponsor/0/website" target="_blank"><img src="https://opencollective.com/ownhealthrecord/sponsor/0/avatar.svg"></a>
+<a href="https://opencollective.com/ownhealthrecord/sponsor/1/website" target="_blank"><img src="https://opencollective.com/ownhealthrecord/sponsor/1/avatar.svg"></a>
+<a href="https://opencollective.com/ownhealthrecord/sponsor/2/website" target="_blank"><img src="https://opencollective.com/ownhealthrecord/sponsor/2/avatar.svg"></a>
+<a href="https://opencollective.com/ownhealthrecord/sponsor/3/website" target="_blank"><img src="https://opencollective.com/ownhealthrecord/sponsor/3/avatar.svg"></a>
+<a href="https://opencollective.com/ownhealthrecord/sponsor/4/website" target="_blank"><img src="https://opencollective.com/ownhealthrecord/sponsor/4/avatar.svg"></a>
+<a href="https://opencollective.com/ownhealthrecord/sponsor/5/website" target="_blank"><img src="https://opencollective.com/ownhealthrecord/sponsor/5/avatar.svg"></a>
+<a href="https://opencollective.com/ownhealthrecord/sponsor/6/website" target="_blank"><img src="https://opencollective.com/ownhealthrecord/sponsor/6/avatar.svg"></a>
+<a href="https://opencollective.com/ownhealthrecord/sponsor/7/website" target="_blank"><img src="https://opencollective.com/ownhealthrecord/sponsor/7/avatar.svg"></a>
+<a href="https://opencollective.com/ownhealthrecord/sponsor/8/website" target="_blank"><img src="https://opencollective.com/ownhealthrecord/sponsor/8/avatar.svg"></a>
+<a href="https://opencollective.com/ownhealthrecord/sponsor/9/website" target="_blank"><img src="https://opencollective.com/ownhealthrecord/sponsor/9/avatar.svg"></a>
+
+
