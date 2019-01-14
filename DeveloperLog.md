@@ -1,4 +1,43 @@
 # The Developer Log
+
+### 14.01.2019 - Donations and future plans
+
+Hey guys
+
+my latest log is already some weeks old, and maybe someone of you already think that the project is dead, but no, its not dead, its just in hibernation ;) . The Problem I currently have is, to earn more money, so free time projects have a lower priority. So how to solve it?
+
+In general the features depends on time, my time and time is costly, so Im looking for monthly donations to continue the development. Its working so, if you donate me money, I can, then if its enough, take my time to continue the development, instead of doing another work.
+
+I got a email from a user who is really interested in OwnHealthRecords and would like to donate 10$ per month. If 10 people do this, I could realize nearly every month one new feature. How awesome is it? I know, some of you dont want to pay for free software, but remember, the code is open source, you can modify it by yourself, but this make it more complicated for me as developer. Who is paying me so I can pay my bills?
+
+You have seen that I update you here always about the current situation and I shared several alpha releases in few weeks, so for testing purposes its already good to go, but not yet for production.
+
+Time is money and money is time, so I want to show you that what is planned and how much time I need for this.
+
+* 50$ - Export Functionality JSON (5h)
+* 80$ - Integrate Multi User Functionality (8h (1-Work Day))
+* 100$ - Improve Installer to automate populate the database (no more hassle with phpMyAdmin (10h))
+* 150$ - Health Check Reminder Functionality (15h)
+* 150$ - Import Functionality JSON (so export from old and import to new Version, machine, etc.)
+* 500$ - Integrating Framework for SQL etc. based databases
+
+That are the costs for the further development.
+Other SQL Systems instead of MySQL are out of my focus, so I have to take more time to get in it and test the database frameworks to work properly with everything. I found already some which providing MySQL, MSSQL, SQLite, MariaDB, PostgreSQL, Sybase, Oracle.
+
+So I hope for everyone is here something :)
+
+#### How it will continue?
+
+To continue the development, I need the donations, really, I dont want to ask for investors to get it fund.
+
+On OpenCollective you can donate me:
+https://opencollective.com/ownhealthrecord
+
+There you can even see the progressbar in the top and how much money got donated. If you donate, please write in the public message for what function you are donating. Every month I will share with you which function will come as next, so no one who dont want to support a function they dont need, is pushed to donate for it. 
+But for long term support and further development, I were glad, if you can support and donate every month interval.
+
+Thank you for your time
+
 ### 22.11.2018 - Busy and Chart Libraries
 Hey guys
 
