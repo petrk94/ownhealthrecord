@@ -1,5 +1,14 @@
 # The Developer Log
 
+### 23.01.2019 - Gitter Community Chat
+
+Hey guys
+
+through its easier to communicate and solve problems, as well to get things communitcate, I want to notify you about, that now there is a Gitter Community for OwnHealthRecord
+
+https://gitter.im/ownhealthrecord
+
+
 ### 14.01.2019 - Donations and future plans
 
 Hey guys
