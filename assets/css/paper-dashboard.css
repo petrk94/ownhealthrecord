@@ -238,7 +238,7 @@ hr {
 
 .sidebar,
 .off-canvas-sidebar {
-  width: 260px;
+  /* width: 260px; - remove the scrolling bar on the sidebar */
   display: block;
   font-weight: 200; }
   .sidebar .logo,
