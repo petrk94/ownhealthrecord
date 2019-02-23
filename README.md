@@ -78,6 +78,11 @@ For this reason, I have collected some links which provide guides to securing yo
 * <a href="https://www.linode.com/docs/security/securing-your-server/" target="_blank">How to Secure Your Server</a>
 * <a href="https://medium.com/viithiisys/10-steps-to-secure-linux-server-for-production-environment-a135109a57c5" target="_blank">10 steps to secure Linux Server for Production Environment</a>
 
+
+## License
+
+The Application is Open Source and can be used for private/individual purposes for free. The usage of code which is not listed below "Third Party Libraries/Code/Sources" for commercial interests is restricted and only legal after my approval, any other commercial usage is prohibited.
+
 ## Third Party Libraries/Code/Sources
 
 The Dashboard theme, developed by Creative Tim is the <a href="https://github.com/creativetimofficial/paper-dashboard" target="_blank">Paper-Dashboard</a> and is licensed by <a href="https://www.creative-tim.com/license/" target="_blank">Creative Tim under the MIT License</a>.
