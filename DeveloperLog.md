@@ -1,5 +1,28 @@
 # The Developer Log
 
+### 18.04.2019 - Im still alive ;)
+
+Hey guys
+
+if you read this, than you are still liking OwnHealthRecord or you maybe got this repo attention.
+
+I want to tell you, this repo is not dead, but Im very busy with my jobs I have, so adding new features is not easy to realize if I dont have time.
+
+Even I want to tell you, that a investor came to and wanted OwnHealthRecord for its system, but due he never get back again, I suppose it was a scam and wanted to misuse it.
+
+Anyway, I changed the license model, if you are a private person, you are free to use, modify, improve, etc. you can share it with friends etc. but the same license belongs to them.
+If you want to use it as a company or commercial way, you have to request the permission from me. If I find it used in commercial products, I will take legal steps.
+
+I love open source and thats important for development, but I dont want that others misuse the work or get rich by this.
+So if you are using it for you, your friends or your family, you are fine and dont have to worry about it :).
+
+What Im even thinking about is, to make it as a SaaS platform, but this will maybe come in the next years.
+
+Recently I just fixed some smaller code parts and the medical-document page, so the upload is working now and you can access your documents from it.
+
+Have a nice time and if you see a bug or wish a feature, please let me know and open a new issue.
+
+
 ### 23.01.2019 - Gitter Community Chat
 
 Hey guys
